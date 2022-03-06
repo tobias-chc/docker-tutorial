@@ -13,7 +13,7 @@ title: Docker for Dummies
 
 -   Different Dev/Test/Prod Environments
 
-<img src=".//media/image1.png" style="width:2.45029in;height:1.69322in" alt="Diagram Description automatically generated" />
+<img src=".//media/image1.png" style="width:6.5in;height:4.64306in" alt="Diagram Description automatically generated" />
 
 ## What can it do?
 
@@ -21,11 +21,7 @@ title: Docker for Dummies
 
 -   Run each service with its own dependencies in separate containers
 
-<img src=".//media/image2.png" style="width:2.25731in;height:1.74749in" alt="A screenshot of a video game Description automatically generated with medium confidence" />
-
-# 
-
-# 
+<img src=".//media/image2.png" style="width:6.5in;height:5.09028in" alt="Graphical user interface, application Description automatically generated" />
 
 ## What are containers?
 
@@ -36,7 +32,7 @@ title: Docker for Dummies
 
 -   Based on LXC containers
 
-<img src=".//media/image3.png" style="width:3.08772in;height:1.53594in" alt="Graphical user interface Description automatically generated" />
+<img src=".//media/image3.png" style="width:6.5in;height:3.37361in" alt="Graphical user interface Description automatically generated" />
 
 ## Operating System
 
@@ -46,23 +42,17 @@ title: Docker for Dummies
 -   The Kernel its responsible of interacting with the underlying
     hardware
 
-<img src=".//media/image4.png" style="width:3.65497in;height:1.57445in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
-
-## 
-
-## 
-
-## 
+<img src=".//media/image4.png" style="width:6.5in;height:2.61597in" alt="Graphical user interface, application Description automatically generated" />
 
 ## Containers vs Virtual Machines
 
-<img src=".//media/image5.png" style="width:3.21053in;height:1.98463in" alt="Graphical user interface, application Description automatically generated" />
+<img src=".//media/image5.png" style="width:6.5in;height:3.93264in" alt="Graphical user interface, application Description automatically generated" />
 
-<img src=".//media/image6.png" style="width:2.78947in;height:1.7765in" alt="Graphical user interface Description automatically generated" />
+<img src=".//media/image6.png" style="width:6.5in;height:4.03611in" alt="Graphical user interface Description automatically generated" />
 
 ## How is it done?
 
-<img src=".//media/image7.png" style="width:3.46667in;height:2.05593in" alt="Graphical user interface Description automatically generated" />
+<img src=".//media/image7.png" style="width:6.5in;height:3.20347in" alt="Graphical user interface Description automatically generated" />
 
 ## Container vs image
 
@@ -70,6 +60,8 @@ title: Docker for Dummies
     containers
 
 -   Containers: Running instances of images that are isolated
+
+<img src=".//media/image8.png" style="width:5.89705in;height:4.88333in" alt="Diagram Description automatically generated" />
 
 # Docker commands
 
@@ -93,7 +85,7 @@ an instance of a web server, application server or a database, etc.*
 
 *A container only lives as long as the process inside it is alive.*
 
-<img src=".//media/image8.png" style="width:2.9883in;height:1.73328in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
+<img src=".//media/image9.png" style="width:6.5in;height:1.6in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
 
 This is why when you run a container from an ubuntu image it stops
 immediately because ubuntu is just an image of an OS, there is no
@@ -106,6 +98,8 @@ process or app running by default.
     -   Uses to specify the version of the image, latest by default.
 
     -   docker run *image_name:**version***
+
+<img src=".//media/image10.png" style="width:6.5in;height:2.95069in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
 
 -   STDIN:
 
@@ -138,6 +132,8 @@ process or app running by default.
 
     -   docker run **-v** /opt/datadir: /var/lib/mysql *image_name*
 
+<img src=".//media/image11.png" style="width:6.225in;height:2.68154in" alt="Graphical user interface Description automatically generated" />
+
 # Jenkins tutorial
 
 Go to <https://hub.docker.com/_/jenkins> if you want more details.
@@ -147,19 +143,19 @@ options by following the next steps:
 
 -   Start Docker Desktop:
 
-<img src=".//media/image9.png" style="width:2.67251in;height:2.07462in" alt="Graphical user interface, application Description automatically generated" />
+> <img src=".//media/image12.png" style="width:5.6971in;height:4.42256in" alt="Graphical user interface, application Description automatically generated" />
 
 -   Check that its running by open a CMD terminal and execute:
 
     -   docker –version
 
-<img src=".//media/image10.png" style="width:5.2299in;height:1.64606in" alt="Text Description automatically generated" />
+<img src=".//media/image13.png" style="width:5.69583in;height:1.79271in" alt="Text Description automatically generated" />
 
 -   Run (or pull) the Jenkins image:
 
     -   docker run jenkins/jenkins
 
-> <img src=".//media/image11.png" style="width:3.24129in;height:1.70306in" alt="Text Description automatically generated" />
+<img src=".//media/image14.png" style="width:5.9634in;height:3.13333in" alt="Text Description automatically generated" />
 
 -   This will download the latest image available (since we did not
     specify the version by using tag : )
@@ -167,12 +163,12 @@ options by following the next steps:
 -   Since we run the image on attach mode our console now is not
     available and shows the info of the running container.
 
-> <img src=".//media/image12.png" style="width:3.778in;height:2.64621in" alt="Text Description automatically generated" />
+> <img src=".//media/image15.png" style="width:6.11079in;height:4.28016in" alt="Text Description automatically generated" />
 
 -   Open another terminal to see the container info by executing: docker
     ps
 
-<img src=".//media/image13.png" style="width:5.00648in;height:0.72637in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
+> <img src=".//media/image16.png" style="width:6.89249in;height:1in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
 
 -   We can only access to this container using the internal port (8080
     or 5000), since we didn’t map the container port to a local port, to
@@ -184,16 +180,16 @@ options by following the next steps:
     -   This will display a lot of information, but we are interested in
         the Networks part more exactly in the IP Address: 172.17.0.1
 
-> <img src=".//media/image14.png" style="width:4.10199in;height:1.61363in" alt="Text Description automatically generated" />
+> <img src=".//media/image17.png" style="width:6.01629in;height:2.36667in" alt="Text Description automatically generated" />
 
 -   Go to the Docker Desktop and open a terminal of the container:
 
-> <img src=".//media/image15.png" style="width:4.78208in;height:0.82358in" alt="Background pattern Description automatically generated" />
+<img src=".//media/image18.png" style="width:7.06451in;height:1.21667in" alt="Background pattern Description automatically generated" />
 
 -   And execute: curl 172.17.0.2:8080, this will show the html code of
     the web page.
 
-> <img src=".//media/image16.png" style="width:4.26617in;height:1.10893in" alt="Text Description automatically generated" />
+> <img src=".//media/image19.png" style="width:6.9889in;height:1.81667in" alt="Text Description automatically generated" />
 
 -   To be able to make this connection using our browser we need to map
     the container port to a local host port. To do this:
@@ -214,25 +210,25 @@ options by following the next steps:
 -   When it finishes, you can access to the web app using your computer
     navigator: localhost:8080
 
-> <img src=".//media/image17.png" style="width:4.01176in;height:2.18847in" alt="Graphical user interface, text, application Description automatically generated" />
+> <img src=".//media/image20.png" style="width:6.17156in;height:3.36667in" alt="Graphical user interface, text, application Description automatically generated" />
 
 -   The password it’s at the end of the execution:
 
-> <img src=".//media/image18.png" style="width:4.70398in;height:1.29008in" alt="Text Description automatically generated" />
+<img src=".//media/image21.png" style="width:6.5633in;height:1.8in" alt="Text Description automatically generated" />
 
 -   The next step is customizing the web app by downloading the plugins,
     select the default option.
 
-> <img src=".//media/image19.png" style="width:3.04975in;height:1.9579in" alt="Graphical user interface Description automatically generated" />
+> <img src=".//media/image22.png" style="width:5.6725in;height:3.64167in" alt="Graphical user interface Description automatically generated" />
 
 -   When the installation finish (takes several minutes) we can create
     an Administrator user:
 
-> <img src=".//media/image20.png" style="width:2.74216in;height:2.56755in" alt="Graphical user interface, application Description automatically generated" />
+> <img src=".//media/image23.png" style="width:5.11667in;height:4.79086in" alt="Graphical user interface, application Description automatically generated" />
 
 -   This is the web app interface for the Administrator user
 
-> <img src=".//media/image21.png" style="width:3.5199in;height:1.56741in" alt="Graphical user interface, application Description automatically generated" />
+<img src=".//media/image24.png" style="width:6.50208in;height:2.89537in" alt="Graphical user interface, application Description automatically generated" />
 
 -   The problem with this run execution is that once we stopped the
     container all the data will be destroy, so we’ll need to install
@@ -282,7 +278,7 @@ With Docker you create a docker file that does the job.
 A dockerfile its simple txt file composed of **Instructions** and
 **Arguments**.
 
-<img src=".//media/image22.png" style="width:6.5in;height:3.26944in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
+<img src=".//media/image25.png" style="width:6.5in;height:3.26944in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
 
 ## Layered architecture
 
@@ -294,11 +290,88 @@ A dockerfile its simple txt file composed of **Instructions** and
 -   All the layers build are cached this helps to restart a docker build
     from a particular step or when you want to add new layers.
 
-<img src=".//media/image23.png" style="width:6.5in;height:1.91458in" alt="Text Description automatically generated with medium confidence" />
+> <img src=".//media/image26.png" style="width:6.93145in;height:2.04167in" alt="Text Description automatically generated with medium confidence" />
 
--   You can access to this info executing:  
+-   You can access to this info executing:
 
-```sh
-docker history *image_name*
-```
+<!-- -->
 
+    docker history image_name
+
+## Environment Variables
+
+We can pass an ENVIRONMENT VARIABLE to the container we use the **-e**
+command
+
+docker run **-e** VAR_NAME=var_value *image_name*
+
+For example, if we have an image (webapp_image) in this case we can pass
+the env variable *APP_COLOR* executing:
+
+docker run **-e** APP_COLOR=green *webapp_image*
+
+<img src=".//media/image27.png" style="width:6.06335in;height:4.5423in" alt="Text Description automatically generated" />
+
+If you want to find the environment variables of a running container,
+you can use the **inspect** command.
+
+docker **inspect** *container_name(id)*
+
+For a more explicit output, run:
+
+docker exec -it *container_name* **env**
+
+## Commands and Entrypoint
+
+Remember that containers are not meant to host an OS, are meant to run
+task or process.
+
+So who defines what process is run within the container?  
+In the dockerfile there is an instruction called **CMD** (command) that
+defines the program that will be executed within the container when it
+starts.
+
+For example this is a dockerfile for the [Nginx
+image](https://hub.docker.com/_/nginx) so the image starts with *nginx*
+command.
+
+<img src=".//media/image28.png" style="width:5.225in;height:4.00472in" alt="Text, letter Description automatically generated" />
+
+If we look at a dockerfile of the Ubuntu image, will see that it uses
+*bash* as the default command, that is not a process it’s a shell the
+listen from inputs, so that’s why a container of a plain ubuntu image
+stops immediately after its instantiation.
+
+<img src=".//media/image29.png" style="width:5.15833in;height:5.26635in" alt="Graphical user interface, text, application Description automatically generated" />
+
+We can run a process and avoid that stops executing: docker run ubuntu
+sleep 10 (or other instruction), but if you want to do this change
+permanent you can create your image as follows:
+
+<img src=".//media/image30.png" style="width:6.5in;height:3.39514in" alt="Graphical user interface, website Description automatically generated" />
+
+In this example the 5 seconds are hardcoded, if we want to modify this,
+we can run:
+
+docker run ubuntu-sleeper sleep 10, this will overwrite the default CMD
+sleep in the dockerfile.
+
+But doesn’t make sense typing sleep command again, if we want to just
+pass the value as a parameter, we need to use the **ENTRYPOINT**
+instruction.
+
+<img src=".//media/image31.png" style="width:6.5in;height:2.89375in" alt="Graphical user interface, text, application, chat or text message Description automatically generated" />
+
+The **ENTRYPOINT** instruction it’s like the **CMD** instruction as in
+you can specify the program that will run when the container starts, but
+whatever you specify in the command line will be appended to
+**ENTRYPOINT**.
+
+But by this way it will be no default value for the **ENTRYPOINT,** so
+we need to combine both **CMD** and **ENTRYPOINT** instructions:
+
+<img src=".//media/image32.png" style="width:6.5in;height:1.53056in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
+
+**<span class="smallcaps">Difference:</span>** In the case of the
+**CMD** instruction the command line parameters passed will get replaced
+entirely whereas in case of **ENTRYPOINT** will get appended.
